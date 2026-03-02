@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24"
+>
+  <defs>
+    <!-- Main Eraser Gradient -->
+    <linearGradient id="eraserMain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F06292"/>
+      <stop offset="100%" stop-color="#D81B60"/>
+    </linearGradient>
+
+    <!-- Bottom Paper Contact Gradient -->
+    <linearGradient id="eraserBottom" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EEEEEE"/>
+      <stop offset="100%" stop-color="#BDBDBD"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main Body -->
+  <path 
+    d="M3 15 L12 6 L21 15 L12 22 Z"
+    fill="url(#eraserMain)"
+  />
+
+  <!-- Bottom Contact Edge -->
+  <path 
+    d="M12 22 L21 15 L21 18 L15 24 L6 24 L3 21 Z"
+    fill="url(#eraserBottom)"
+    transform="translate(0,-2)"
+  />
+
+  <!-- Separation Line -->
+  <line 
+    x1="6" 
+    y1="12" 
+    x2="18" 
+    y2="12"
+    stroke="#FFFFFF"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    opacity="0.6"
+  />
+</svg>

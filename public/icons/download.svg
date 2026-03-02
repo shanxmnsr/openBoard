@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24"
+>
+  <defs>
+    <!-- Arrow Gradient -->
+    <linearGradient id="arrowGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#424242"/>
+      <stop offset="100%" stop-color="#212121"/>
+    </linearGradient>
+
+    <!-- Base Line Gradient -->
+    <linearGradient id="baseGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#616161"/>
+      <stop offset="100%" stop-color="#424242"/>
+    </linearGradient>
+
+    <!-- Shadow -->
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Arrow Shaft -->
+  <rect 
+    x="11" 
+    y="4" 
+    width="2" 
+    height="10" 
+    rx="1"
+    fill="url(#arrowGradient)"
+    filter="url(#shadow)"
+  />
+
+  <!-- Arrow Head -->
+  <polygon 
+    points="8,12 12,17 16,12"
+    fill="url(#arrowGradient)"
+  />
+
+  <!-- Base Line -->
+  <rect 
+    x="5" 
+    y="19" 
+    width="14" 
+    height="2" 
+    rx="1"
+    fill="url(#baseGradient)"
+  />
+</svg>

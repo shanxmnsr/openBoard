@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 28 28"
+>
+  <defs>
+    <linearGradient id="pencilBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#424242"/>
+      <stop offset="100%" stop-color="#212121"/>
+    </linearGradient>
+
+    <linearGradient id="woodTip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D7A86E"/>
+      <stop offset="100%" stop-color="#B87333"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Slightly scaled & centered -->
+  <g transform="translate(2,2) scale(0.9)">
+    
+    <!-- Pencil Body -->
+    <path 
+      d="M3 17L17 3L21 7L7 21L3 21Z"
+      fill="url(#pencilBody)"
+    />
+
+    <!-- Wooden Tip -->
+    <polygon 
+      points="17,3 19,1 23,5 21,7"
+      fill="url(#woodTip)"
+    />
+
+    <!-- Lead -->
+    <polygon 
+      points="19,1 20,0 24,4 23,5"
+      fill="#000000"
+    />
+
+  </g>
+</svg>

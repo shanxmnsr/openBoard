@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#212121"
+  stroke-width="3"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <!-- Arrow Head -->
+  <polyline points="15 5 20 10 15 15" />
+
+  <!-- Curved Line -->
+  <path d="M4 19a8 8 0 0 1 8-8h8" />
+</svg>

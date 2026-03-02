@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>OpenBoard Clone</title>
+</head>
+<body>
+    <div class="options-container">
+       <i class="fas fa-bars"></i>
+       
+    </div>
+    <div class="tools-container scale-tools">
+        <img class="pencil" src="icons/pencil.svg">
+        <img class="eraser" src="icons/eraser.svg">
+        <img class="stickyNote" src="icons/stickyNote.svg">
+        <img class="download" src="icons/download.svg">
+        <img class="upload" src="icons/upload.svg">
+        <img class="redo" src="icons/redo.svg">
+        <img class="undo" src="icons/undo.svg">
+    </div>
+
+    <div class="pencil-tool-container">
+        <div class="pencil-width-container">
+            <input type="range" min="2" max="10" value="3" class="pencil-width">
+        </div>
+        <div class="pencil-color-container">
+            <div class="black pencil-color"></div>
+            <div class="red pencil-color"></div>
+            <div class="blue pencil-color"></div>
+        </div>
+    </div>
+
+    <div class="eraser-tool-container">
+        <input type="range" min="2" max="10" value="3" class="eraser-width">
+    </div>
+
+    <canvas></canvas>
+    <!-- socket, for connecting to frontend -->
+    <script src="https://cdn.socket.io/3.1.3/socket.io.min.js" integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh" crossorigin="anonymous"></script>
+    <!-- frontend jb bhi start hoga we need to connect it to server as well -->
+     <script> 
+        let socket = io.connect("http://localhost:3000");
+     </script>
+    <script src="./tools.js"></script>
+    <script src="./canvas.js"></script>
+</body>
+</html>
