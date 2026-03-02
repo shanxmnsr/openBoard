@@ -7,7 +7,7 @@ const app = express();   //Initialize and server ready
 // yeh frontend k index.html ko connect/display krayegi 
 app.use(express.static("public")); 
 
-let port = 3000;
+let port = process.env.PORT || 3000;
 let server = app.listen(port, () => {
     console.log("Listening to port" + port);
 })
